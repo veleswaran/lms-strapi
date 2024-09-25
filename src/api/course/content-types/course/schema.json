@@ -18,7 +18,7 @@
     "description": {
       "type": "text"
     },
-    "icon": {
+    "image": {
       "type": "media",
       "multiple": true,
       "required": false,
@@ -29,11 +29,11 @@
         "audios"
       ]
     },
-    "languages": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::language.language",
-      "mappedBy": "courses"
+    "cost": {
+      "type": "biginteger"
+    },
+    "duration": {
+      "type": "biginteger"
     }
   }
 }
